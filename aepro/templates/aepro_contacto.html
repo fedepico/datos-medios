@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+
+{% block titulo %}Contacto{% endblock %}
+
+{% block encabezado %}
+	<h1>Contacto</h1>
+{% endblock %}
+{% block contenido %}
+
+<script type="text/javascript" src="{% static 'js/jquery.1.12.4.min.js' %}"></script>
+<!--<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>-->
+
+
+
+<div class='row'>
+	<div class='col-sm-6 col-sm-offset-3'>
+		<!--<h1 class='text-align-center'>Contacto</h1>-->
+		<form method="POST"action="">{% csrf_token %}
+		{{ form|crispy }}
+		<input class='btn btn-primary'type="submit" value='Enviar'/>
+		</form>
+     </div>
+</div>
+
+
+
+
+	
+      {% endblock contenido%}
+
+

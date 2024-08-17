@@ -1,0 +1,16 @@
+Django
+django-crispy-forms
+crispy_bootstrap5
+docutils
+django-registration-redux
+django-multiselectfield
+django-bootstrap3
+django-bootstrap3-datetimepicker
+django-forms-utils
+django-allauth
+jwt
+xlrd
+plotly
+numpy
+psycopg2
+requests
